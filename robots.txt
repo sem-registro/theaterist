@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Localização do nosso mapa do site
+Sitemap: https://theaterist.blog/sitemap.xml
