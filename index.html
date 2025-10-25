@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="th"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theaterist : ชีวิต ติด หนัง – Movie Reviews, Thailand Box Office Report</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .post-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px; /* Espaço acima da grelha */
+        }
+        .post-card {
+            background: #fff;
+            border: 1px solid #eee;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: box-shadow 0.3s ease;
+            display: flex; /* Para alinhar imagem e conteúdo */
+            flex-direction: column;
+        }
+        .post-card:hover {
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .post-card-image img {
+            width: 100%;
+            height: 180px; 
+            object-fit: cover; 
+            border-bottom: 1px solid #eee;
+        }
+        .post-card-content {
+            padding: 15px;
+            flex-grow: 1; /* Faz o conteúdo ocupar o espaço restante */
+            display: flex;
+            flex-direction: column;
+        }
+        .post-card-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            line-height: 1.3;
+            flex-grow: 1; /* Empurra a meta para baixo */
+        }
+        .post-card-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .post-card-meta {
+            font-size: 0.8em;
+            color: #777;
+            margin-top: auto; /* Alinha a meta no fundo */
+        }
+        /* Secção de Destaque (Goraput.site) */
+        .featured-section {
+            background-color: #f9f9f9; /* Fundo ligeiramente diferente */
+            color: #333;
+            padding: 40px 20px;
+            margin: 20px 0;
+            text-align: center;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+        .featured-section h2 {
+            font-size: 1.8em;
+            margin-top: 0;
+            color: #C04848; /* Cor principal */
+        }
+        .featured-section p {
+            font-size: 1.1em;
+            max-width: 700px;
+            margin: 10px auto;
+        }
+        .featured-section .button {
+            display: inline-block;
+            background-color: #C04848; 
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 3px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .featured-section .button:hover {
+            background-color: #a03030;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="wrapper">
+            <div class="site-branding">
+                <h1 class="site-title"><a href="/"><img src="imagens/theateristlogo2018-transparent.png" alt="Theaterist : ชีวิต ติด หนัง" class="site-logo"></a></h1>
+                <p class="site-description">Movie Reviews, Thailand Box Office Report</p>
+            </div>
+            <nav class="main-navigation">
+                <button class="menu-toggle" aria-expanded="false">Menu</button>
+                <ul class="nav-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/category/thailand-box-office/">Thailand Box Office</a></li>
+                    <li><a href="/category/news/">News</a></li>
+                    <li><a href="/category/film-awards/">Film Awards</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="content" class="site-content">
+        <div class="wrapper">
+            <main id="main" class="site-main">
+
+                <section class="featured-section">
+                    <h2>From Silver Screen Escapism to Real-World Adventure</h2>
+                    <p>
+                        As movie lovers here at Theaterist, we're often captivated by the stunning landscapes and authentic adventures depicted on screen. Now, I'm thrilled to introduce a personal project born from that same spirit of exploration: <strong>Goraput.site</strong>.
+                    </p>
+                    <p>
+                        My name is Marko, and Goraput ("Mountain Path") is my comprehensive guide to the breathtaking, film-worthy beauty of Montenegro—a hidden gem offering both "accessible luxury" and raw, "authentic adventure." If you've ever dreamt of stepping into those cinematic scenes, let Goraput be your trusted path.
+                    </p>
+                    <a href="https://goraput.site" class="button" target="_blank" rel="noopener noreferrer">Discover Montenegro with Goraput</a>
+                </section> 
+                <h2>Artigos Recentes</h2>
+
+                <div class="post-grid">
+
+                    <article class="post-card">
+                        <a class="post-card-image" href="2021/11/12/daily-box-office-หนังทำเงินประจำสุดส-2/">
+                            <img src="imagens/eternals-poster.jpg" alt="Eternals (ฮีโร่พลังเทพเจ้า)">
+                        </a>
+                        <div class="post-card-content">
+                            <h3 class="post-card-title">
+                                <a href="2021/11/12/daily-box-office-หนังทำเงินประจำสุดส-2/">รายงาน Box Office: "Eternals" ครองแชมป์สัปดาห์ที่ 2 (Página de Maior Autoridade)</a>
+                            </h3>
+                            <div class="post-card-meta">
+                                <time datetime="2021-11-12">12 Nov 2021</time>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <a class="post-card-image" href="2020/12/14/thailand-box-office-หนังทำเงินประจำสุดส-111/">
+                            <img src="imagens/cover-week-50-2020.jpg" alt="Demon Slayer Mugen Train">
+                        </a>
+                        <div class="post-card-content">
+                            <h3 class="post-card-title">
+                                <a href="2020/12/14/thailand-box-office-หนังทำเงินประจำสุดส-111/">[Thailand Box Office] Demon Slayer: Kimetsu no Yaiba the Movie: Mugen Train...</a>
+                            </h3>
+                            <div class="post-card-meta">
+                                <time datetime="2020-12-14">14 Dec 2020</time>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <a class="post-card-image" href="2020/07/24/รายงานหนังใหม่ทำเงิน-ว-57/">
+                            <img src="imagens/cover-thur-30-2020.jpg" alt="Train to Busan Peninsula">
+                        </a>
+                        <div class="post-card-content">
+                            <h3 class="post-card-title">
+                                <a href="2020/07/24/รายงานหนังใหม่ทำเงิน-ว-57/">รายงานหนังใหม่ทำเงิน: Train to Busan: Peninsula ทุบสถิติหนังเกาหลี...</a>
+                            </h3>
+                            <div class="post-card-meta">
+                                <time datetime="2020-07-24">24 Jul 2020</time>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <a class="post-card-image" href="2020/07/03/สรุปรายชื่อผู้ชนะรางวั-8/">
+                            <img src="imagens/critic2020cover-winner.jpg" alt="Bangkok Critics Assembly Awards 28 Winners">
+                        </a>
+                        <div class="post-card-content">
+                            <h3 class="post-card-title">
+                                <a href="2020/07/03/สรุปรายชื่อผู้ชนะรางวั-8/">สรุปรายชื่อผู้ชนะรางวัลชมรมวิจารณ์บันเทิง ครั้งที่ 28...</a>
+                            </h3>
+                            <div class="post-card-meta">
+                                <time datetime="2020-07-03">03 Jul 2020</time>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <a class="post-card-image" href="2020/02/25/thailand-box-office-หนังทำเงินประจำสุดส-80/">
+                            <img src="imagens/cover-week-08-2020.jpg" alt="Pee Nak 2">
+                        </a>
+                        <div class="post-card-content">
+                            <h3 class="post-card-title">
+                                <a href="2020/02/25/thailand-box-office-หนังทำเงินประจำสุดส-80/">[Thailand Box Office] ...พี่นาค 2 ขึ้นแท่นหนังไทยเปิดตัวสูงสุดปีนี้</a>
+                            </h3>
+                            <div class="post-card-meta">
+                                <time datetime="2020-02-25">25 Feb 2020</time>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <a class="post-card-image" href="2020/02/15/low-season-reactions-on-low-season/">
+                            <img src="imagens/low-season-poster.jpg" alt="Low Season สุขสันต์วันโสด">
+                        </a>
+                        <div class="post-card-content">
+                            <h3 class="post-card-title">
+                                <a href="2020/02/15/low-season-reactions-on-low-season/">รายงานพิเศษ: วิเคราะห์วิจารณ์และปฏิกิริยาของผู้ชมต่อ Low Season...</a>
+                            </h3>
+                            <div class="post-card-meta">
+                                <time datetime="2020-02-15">15 Feb 2020</time>
+                            </div>
+                        </div>
+                    </article>
+
+                </div> </main>
+            
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="wrapper">
+            <div class="site-info">
+                <p>© 2025 Theaterist : ชีวิต ติด หนัง. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('toggled');
+                    const isExpanded = navMenu.classList.contains('toggled');
+                    menuToggle.setAttribute('aria-expanded', isExpanded);
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
